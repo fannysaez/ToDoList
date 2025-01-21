@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* Style.css */
+body {
+  background: linear-gradient(
+    191deg,
+    rgb(4, 71, 85) 35%,
+    rgb(0, 195, 255) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin:0;
+}
+/*container de ma to do list (couleur de fond blanc avec un box shadows) */
+.todo-container{
+    background: #fff;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgb(0, 0, 0, 0.1);
+    border: #09ccf4 dotted 2px;
+    width: 500px;
+    text-align: center;
+}
+h1{
+    margin-bottom: 40px;
+}
+/* Champ pour ajouter mes tâches*/
+.todo-input{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+input{
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+/* Bouton*/
+button{
+    padding: 10px 20px;
+    background-color: #1c6590;
+    color:white;
+    border:none;
+    border-radius: 4px;
+    cursor:pointer;
+}
+/* bouton + au survol de la souris*/
+.addTaskButton:hover{
+    background-color: #00d4ff;
+}
+
+/* Liste des tâches*/
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+li input[type="checkbox"]{
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Couleur de text pour ajouter une tâche*/
+li button{
+    background: none;
+    border:none;
+    color:#333;
+    font-size: 1.2rem;
+    cursor:pointer;
+    margin-left: 5px;
+}
+/* h1*/
+li span{
+    flex:1;
+    margin-left: 10px;
+    font-family: "Playfair Display", serif;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+/* Couleurs de mes icônes pour modifer et supprimer */
+li button .fa-edit{
+    color:#1c6590;
+}
+
+li button .fa-trash{
+    color:#00d4ff;
+}
+
