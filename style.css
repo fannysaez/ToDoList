@@ -36,8 +36,8 @@ h1{
 input{
     flex: 1;
     padding: 10px;
-    border: 1px dotted;
-    border-radius:30px;
+    border: 1px dotted ;
+    border-radius:15px;
     text-align: center;
     letter-spacing: 1px;
 }
