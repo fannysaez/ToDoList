@@ -53,6 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
         // Réinitialiser l'entrée
         taskInput.value = "";
+
       }
     });
   
